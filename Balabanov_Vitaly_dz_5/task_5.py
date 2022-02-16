@@ -9,15 +9,7 @@
 # ВНИМАНИЕ! Используйте стартовый код для своей реализации:
 
 
-# unique_brands = set()
-# tmp = set()
-# for el in basket:
-#    if el not in tmp:
-#        unique_brands.add(el)
-#    else:
-#        unique_brands.discard(el)
-#    tmp.add(el)
-# print(unique_brands)  # {'asus', 'huawei'}
+
 
 
 def get_uniq_numbers(src: list):
