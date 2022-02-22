@@ -1,0 +1,30 @@
+Задание 1
+Результат выполнения задания должен быть файл task_4_1.txt добавленный в репозиторий, в котором будут введенные Вами команды и их результат
+
+Проверить, установлен ли пакет pillow в глобальном окружении. Если да — зафиксировать версию.
+Установить самую свежую версию pillow, если ранее она не была установлена.
+Создать и активировать виртуальное окружение. Убедиться, что в нем нет пакета pillow.
+Установить в виртуальное окружение pillow версии 7.1.1 (или другой, отличной от самой свежей).
+Деактивировать виртуальное окружение.
+Если будут проблемы с pillow - можно поработать с другим пакетом: например, requests.
+
+
+
+(venv) vitalybalabanov@Vitalys-MacBook-Pro GeekBrains % pip freeze
+Pillow==9.0.1
+(venv) vitalybalabanov@Vitalys-MacBook-Pro GeekBrains % cd ..
+(venv) vitalybalabanov@Vitalys-MacBook-Pro PycharmProjects % cd new_vm
+(venv) vitalybalabanov@Vitalys-MacBook-Pro new_vm % python -m venv new_vm
+(venv) vitalybalabanov@Vitalys-MacBook-Pro new_virt % source new_vm/bin/activate
+(new_vm) vitalybalabanov@Vitalys-MacBook-Pro new_vm% pip freeze
+(new_vm) vitalybalabanov@Vitalys-MacBook-Pro new_vm % pip install -U pip
+(new_vm) vitalybalabanov@Vitalys-MacBook-Pro new_vm % pip install pillow==7.1.1
+(new_vm) vitalybalabanov@Vitalys-MacBook-Pro new_vm % pip freeze
+Collecting pillow==7.1.1
+  Downloading Pillow-7.1.1-cp38-cp38-macosx_10_10_x86_64.whl (2.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 4.8 MB/s eta 0:00:00
+Installing collected packages: pillow
+Successfully installed pillow-7.1.1
+(new_vm) vitalybalabanov@Vitalys-MacBook-Pro new_vm % pip freeze
+Pillow==7.1.1
+(new_vm) vitalybalabanov@Vitaly
