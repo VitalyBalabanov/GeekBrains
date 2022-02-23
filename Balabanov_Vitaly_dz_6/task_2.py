@@ -46,9 +46,11 @@ def prepare_dataset(path_users_file: str, path_hobby_file: str) -> dict:
             user_inform[user_key] = hobby_line
         else:
             user_inform[user_key] = hobby_line.strip()
+    user_file.close()
+    hobby_file.close()
     return user_inform
 
 
-dict_out = prepare_dataset('users', 'hobbytask')
+dict_out = prepare_dataset('users', 'hobby')
 with open('task_6_3_result.json', 'w', encoding='utf-8') as fw:
     json.dump(dict_out, fw, ensure_ascii=False, indent=2)
